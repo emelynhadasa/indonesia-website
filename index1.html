@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore Indonesia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/button.css">
+</head>
+
+<body>
+
+  <section id="hero"
+    class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+
+    <video autoplay loop muted playsinline class="back-video">
+      <source src="videos/IndonesiaVideo.mp4" type="video/mp4">
+    </video>    
+
+    <main class="fade-in">
+      <h4>Explore, </span></h4>
+      <h1 class="boujee-text">Indonesia</h1>
+      <p class="fading">See the beauty of us</p>
+      <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Explore</a>
+    </main>
+
+  </section>
+
+  <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+    <div class="container">
+      <img src="img/main-logo.png" class="main-logo"><a href="/#" class="navbar-brand">Explore</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Explore</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="index.html">Danau Toba</a>
+            <a class="nav-link" href="#history">Borobudur</a>
+            <a class="nav-link" href="index2.html">Mandalika</a>
+            <a class="nav-link" href="index3.html">Labuan Bajo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="home">
+      <div class="row justify-content-center">
+          <section class="video-slider">
+            <video id="slider" autoplay muted loop>
+              <source src="videos/teasers/video2.mp4" type="video/mp4">
+            </video>
+            <ul class="navigation"> 
+              <li onclick="videoselector('videos/teasers/video1.mp4')"><img src="img/thumbnail/video1.png" height="100px" width="150px"></li>
+              <li onclick="videoselector('videos/teasers/video2.mp4')"><img src="img/thumbnail/video2.png" height="100px" width="150px"></li>
+              <li onclick="videoselector('videos/teasers/video3.mp4')"><img src="img/thumbnail/video3.png" height="100px" width="150px"></li>
+              <li onclick="videoselector('videos/teasers/video4.mp4')"><img src="img/thumbnail/video4.png" height="100px" width="150px"></li>
+            </ul>
+          </section>
+  </section>
+
+  <section id="history" class="history">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <span>DIVE DEEP INTO ... </span>
+          <h2>Borobudur</h2>
+          <p>A UNESCO World Heritage site and one of the most iconic and significant Buddhist monuments in the world. </p>
+          <div class="embed-responsive embed-responsive-16by9 timeline-video">
+            <iframe class="embed-responsive-item" src="videos/timeline/Borobudur.mp4" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image" style="background-image: url(img/borobudur/borobudur1.jpg);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Historical and Cultural Significance</h3>
+                  <span>9th-century Mahayana Buddhist temple</span>
+                </div>
+                <div class="timeline-body">
+                  <p>
+                    A 9th-century Mahayana Buddhist temple located in Central Java, Indonesia. It was built during the reign of the Sailendra Dynasty, between the 8th and 9th centuries.
+                    The temple is a representation of the Buddhist cosmology, and it consists of nine stacked platforms, six square and three circular, topped by a central dome. It is adorned with 2,672 relief panels and 504 Buddha statues.  
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url(img/borobudur/borobudur2.png);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Architectural Marvel</h3>
+                  <span>Gupta architecture of India</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Borobudur is renowned for its impressive architecture and design. It reflects a blend of Indonesian indigenous architecture and the Gupta architecture of India. The temple's structure resembles a mandala, with a main dome at the center surrounded by concentric terraces.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-image" style="background-image: url(img/borobudur/borobudur3.jpg);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Relief Panels</h3>
+                  <span>8th-century Java</span>
+                </div>
+                <div class="timeline-body">
+                  The walls of Borobudur are adorned with intricate relief panels, telling the story of Buddhist cosmology and the life of Siddhartha Gautama, who later became the Buddha. The reliefs also depict scenes of daily life in 8th-century Java.</div>
+              </div>
+            </li>
+
+            <li class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url(img/borobudur/borobudur4.jpg);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Cultural and Religious Syncretism</h3>
+                  <span>Cultural and religious syncretism</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Borobudur reflects a cultural and religious syncretism between the prevailing animist traditions of Java and Buddhism. The fusion of these elements is evident in the temple's design and the inclusion of indigenous elements in its construction.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-image" style="background-image: url(img/borobudur/borobudur5.jpeg);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Restoration and UNESCO Recognition</h3>
+                  <span>20th century</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Borobudur underwent major restoration efforts in the 20th century, particularly in the 1970s and 1980s, to address issues like volcanic ash damage, weathering, and decay. The restoration project was a collaborative effort involving UNESCO and the Indonesian government.
+                    In 1991, Borobudur was designated as a UNESCO World Heritage Site, recognizing its cultural and historical significance. It is also one of the most visited tourist attractions in Indonesia.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--Rotating Floating Button to Puzzle Page-->
+    <a href="puzzle-pages/puzzle-borobudur/index.html" class="link fixedButton" id="historyButton">
+      <svg viewBox='0 0 200 200' width='200' height='200' xmlns='http://www.w3.org/2000/svg' class="link__svg" aria-labelledby="link1-title link1-desc">
+        <title id="link1-title">PLAY PUZZLE</title>
+    
+        <path id="link-circle" class="link__path" d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" stroke="none" fill="none" />
+    
+        <path class="link__arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115"  fill="none" />
+    
+        <text class="link__text">
+          <textPath href="#link-circle" stroke="none">
+            <a href="puzzle-pages/puzzle-borobudur/index.html">CLICK TO PLAY PUZZLE</a>
+          </textPath>
+        </text>
+      </svg>
+    </a>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <small class="block">&copy; 2023 Explore Indonesia. All Rights Reserved.</small>
+          <small class="block">Design by <a href="https://instagram.com/emilyhads">@emilyhads</a>.</small>
+
+          <ul class="mt-3">
+            <li><a href="https://www.instagram.com/emilyhads/"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/@emelynhadasa925"><i class="bi bi-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="audio-container">
+    <audio id="song" autoplay loop>
+      <source src="audio/save-and-sound.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="audio-icon-wrapper" style="display: none;">
+      <i class="bi bi-disc"></i>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

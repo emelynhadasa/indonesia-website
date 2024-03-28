@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --rotation-duration: 20s;
+    --hover-duration: 0.3s;
+    --ease-in: cubic-bezier(0.32, 0, 0.67, 0);
+    --ease-out: cubic-bezier(0.33, 1, 0.68, 1);
+    --text-color: #2B3338;
+    --bg-color: #A6B8B1;
+    --accent-color: #E8D6C1;
+  }
+  
+  .fixedButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    z-index: 999;
+  }
+
+  .link {
+    width: 7rem;
+    height: 7rem;
+    display: inline-block;
+    font: 300 1.55rem/1.4 "Inter", sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 0.1175em;
+    word-spacing: 0.3em;
+    text-decoration: none;
+  }
+
+  .link__text textPath {
+    font: 300 1.55rem/1.4 "Inter", sans-serif;
+  }
+
+  .link__text textPath a {
+    text-decoration: none;
+  }
+  
+  .link__svg {
+    width: 100%;
+    height: auto;
+    transform-box: fill-box;
+    fill: var(--text-color);
+    stroke: var(--text-color);
+    stroke-width: 0.05em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .link__cloud {
+    transform-origin: 50% 50%;
+    animation: rotate normal infinite calc(3 * var(--rotation-duration)) linear;
+    fill: rgba(255, 255, 255, 0.15);
+  }
+  
+  .link__face,
+  .link__arrow {
+    transform-origin: 50% 50%;
+    transition: transform calc(var(--hover-duration) / 2) var(--ease-in);
+  
+    .link:hover & {
+      transform: scale(1.1);
+      transition: transform var(--hover-duration) var(--ease-out);
+    }
+  }
+  
+  .link__arrow {
+    stroke-width: 0.075em;
+  }
+  
+  .link__text {
+    animation: rotateReverse normal infinite var(--rotation-duration) linear;
+    transform-origin: 50% 50%;
+  
+    .link:hover & {
+      animation-play-state: paused;
+    }
+  }
+  
+  .link--alt {
+    font-size: 1.15rem;
+    letter-spacing: 0;
+    word-spacing: 0;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotateReverse {
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  

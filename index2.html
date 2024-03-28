@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore Indonesia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/button.css">
+</head>
+
+<body>
+
+  <section id="hero"
+    class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+
+    <video autoplay loop muted playsinline class="back-video">
+      <source src="videos/IndonesiaVideo.mp4" type="video/mp4">
+    </video>    
+
+    <main class="fade-in">
+      <h4>Explore, </span></h4>
+      <h1 class="boujee-text">Indonesia</h1>
+      <p class="fading">See the beauty of us</p>
+      <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Explore</a>
+    </main>
+
+  </section>
+
+  <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+    <div class="container">
+      <img src="img/main-logo.png" class="main-logo"><a href="/#" class="navbar-brand">Explore</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Explore</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="index.html">Danau Toba</a>
+            <a class="nav-link" href="index1.html">Borobudur</a>
+            <a class="nav-link" href="#history">Mandalika</a>
+            <a class="nav-link" href="index3.html">Labuan Bajo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="home">
+      <div class="row justify-content-center">
+          <section class="video-slider">
+            <video id="slider" autoplay muted loop>
+              <source src="videos/teasers/video3.mp4" type="video/mp4">
+            </video>
+            <ul class="navigation"> 
+              <li onclick="videoselector('videos/teasers/video1.mp4')"><img src="img/thumbnail/video1.png" height="100px" width="150px"></li>
+              <li onclick="videoselector('videos/teasers/video2.mp4')"><img src="img/thumbnail/video2.png" height="100px" width="150px"></li>
+              <li onclick="videoselector('videos/teasers/video3.mp4')"><img src="img/thumbnail/video3.png" height="100px" width="150px"></li>
+              <li onclick="videoselector('videos/teasers/video4.mp4')"><img src="img/thumbnail/video4.png" height="100px" width="150px"></li>
+            </ul>
+          </section>
+  </section>
+
+  <section id="history" class="history">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <span>DIVE DEEP INTO ... </span>
+          <h2>Mandalika</h2>
+          <p>A tourist destination in Indonesia, particularly known for its beautiful beaches and development projects.</p>
+          <div class="embed-responsive embed-responsive-16by9 timeline-video">
+            <iframe class="embed-responsive-item" src="videos/timeline/Mandalika.mp4" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image" style="background-image: url(img/mandalika/mandalika1.webp);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Tourist Destination in Lombok</h3>
+                  <span>Lombok in Indonesia</span>
+                </div>
+                <div class="timeline-body">
+                  <p>
+                    Mandalika is located on the island of Lombok in Indonesia. It is known for its stunning beaches, clear blue waters, and natural beauty. The area is being developed to promote tourism and attract visitors to Lombok.  
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url(img/mandalika/mandalika2.jpg);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Mandalika Circuit</h3>
+                  <span>Mandalika International Street Circuit</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Mandalika is home to the Mandalika International Street Circuit, a racing circuit that is part of efforts to promote the area for sports tourism. The circuit is designed to host international motorbike racing events, such as MotoGP.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-image" style="background-image: url(img/mandalika/mandalika3.webp);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Tourism Development Project</h3>
+                  <span>Hotels, resorts, and infrastructure</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Mandalika has been the focus of a significant tourism development project aimed at boosting the tourism industry in Lombok. The development includes hotels, resorts, and infrastructure to accommodate a growing number of tourists.</p></div>
+              </div>
+            </li>
+
+            <li class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url(img/mandalika/mandalika4.jpg);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Investment and Economic Impact</h3>
+                  <span>Attracts domestic and international investments</span>
+                </div>
+                <div class="timeline-body">
+                  <p>The development of Mandalika has attracted both domestic and international investments. The tourism sector's growth is expected to have a positive impact on the local economy by creating jobs and supporting businesses.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-image" style="background-image: url(img/mandalika/mandalika5.webp);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Cultural and Environmental Considerations</h3>
+                  <span>Sustainable tourism practices</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Efforts are made to balance tourism development with cultural and environmental preservation. Sustainable tourism practices are encouraged to protect the natural beauty and cultural heritage of the area.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--Rotating Floating Button to Puzzle Page-->
+    <a href="puzzle-pages/puzzle-mandalika/index.html" class="link fixedButton" id="historyButton">
+      <svg viewBox='0 0 200 200' width='200' height='200' xmlns='http://www.w3.org/2000/svg' class="link__svg" aria-labelledby="link1-title link1-desc">
+        <title id="link1-title">PLAY PUZZLE</title>
+    
+        <path id="link-circle" class="link__path" d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" stroke="none" fill="none" />
+    
+        <path class="link__arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115"  fill="none" />
+    
+        <text class="link__text">
+          <textPath href="#link-circle" stroke="none">
+            <a href="puzzle-pages/puzzle-mandalika/index.html">CLICK TO PLAY PUZZLE</a>
+          </textPath>
+        </text>
+      </svg>
+    </a>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <small class="block">&copy; 2023 Explore Indonesia. All Rights Reserved.</small>
+          <small class="block">Design by <a href="https://instagram.com/emilyhads">@emilyhads</a>.</small>
+
+          <ul class="mt-3">
+            <li><a href="https://www.instagram.com/emilyhads/"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/@emelynhadasa925"><i class="bi bi-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="audio-container">
+    <audio id="song" autoplay loop>
+      <source src="audio/save-and-sound.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="audio-icon-wrapper" style="display: none;">
+      <i class="bi bi-disc"></i>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
